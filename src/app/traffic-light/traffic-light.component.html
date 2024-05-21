@@ -1,0 +1,8 @@
+<div class="traffic-light">
+  <div
+    [class.red]="currentColor === 'red'"
+    [class.yellow]="currentColor === 'yellow'"
+    [class.green]="currentColor === 'green'"
+  ></div>
+</div>
+<button (click)="cross()" [disabled]="currentColor === 'red'">Пресичане</button>
